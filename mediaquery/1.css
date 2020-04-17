@@ -1,0 +1,22 @@
+.mobile, .tablet, .pc {
+    margin: auto;
+    font-size: 50px;
+    color:yellow;
+    display: none;
+}
+/* Mobile */
+@media only screen and (max-width:739px)
+{
+    .mobile{display: block;}
+}
+/* Tablet */
+@media only screen and (min-width:739px) and (max-width:1023px)
+{
+    .tablet{display:block;}
+
+}
+/* pc */
+@media only screen and (min-width:1024px)
+{
+    .pc{display: block;}
+}

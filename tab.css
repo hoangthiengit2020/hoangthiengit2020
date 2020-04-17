@@ -1,0 +1,90 @@
+
+
+.ndchitiet img {
+    width: 200px;
+    border: 1px solid gray;
+    margin-right: 20px;
+}
+
+.bonnd li {
+    list-style: none;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.bonnd {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bonnut ul li {
+    list-style: none;
+    float: left;
+    margin-left: 3px;
+}
+
+.bonnut {
+    width: 900px;
+    height: 50px;
+    margin: auto 181px;
+    cursor: pointer;
+}
+*{margin:0;padding:0}
+
+.bonnd li {
+    position: absolute;
+    width: 900px;
+}
+
+.bonnd li:before {
+    content: '';
+    height: 17px;
+    width: 17px;
+    background: #c233330f;
+    position: absolute;
+    top: -8px;
+    left: 27px;
+    border: 1px solid #c2c1c1;
+    transform: rotateZ(45deg);
+}
+
+.bonnd li:after {
+    content: '';
+    height: 17px;
+    width: 17px;
+    border: 1px solid #ffffffff;
+    background: #ffffff;
+    position: absolute;
+    top: -6px;
+    left: 27px;
+    transform: rotateZ(45deg);
+}
+
+.ndchitiet {
+    color: gray;
+    font-family: segoe ui light;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.bonnut ul li:hover i {
+    cursor: pointer;
+    color: #ddd;
+}
+.bonnut ul li:hover  b {
+    cursor: pointer;
+    color: #ddd;
+}
+.bonnut ul li b {
+    cursor: pointer;
+    color: black;
+}
+li.active b.btn {
+    background:gray;
+    color:white;
+}

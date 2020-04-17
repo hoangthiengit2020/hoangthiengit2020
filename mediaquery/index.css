@@ -1,0 +1,85 @@
+*{margin:0;padding:0;}
+body,html{
+    background-color: yellow;
+    height: 100%;
+}
+:root{
+
+    --font:"segoe ui light";
+    --fontsize:50px;
+    --color1:pink;
+    --color2:red;
+    --color3:rgb(9, 11, 128);
+}
+.wrap{
+    display:flex;
+    flex-direction: row;    
+    height: 100%;
+    justify-content: space-around;
+}
+.mobile{
+   
+    width: 30%;   
+    text-align: center;  
+    color:white;
+    font-family: var(--font);
+    font-size: var(--fontsize);
+    font-weight: bold;
+    background-color: var(--color1);
+    height: 100%;     
+    display: none;
+    
+}
+.wrap span{
+position: relative;
+float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+.tablet{
+    width: 30%;;
+    text-align: center;   
+    color:yellowgreen;
+    font-family: var(--font);
+    font-size: var(--fontsize);
+    font-weight: bold;
+    background-color: var(--color2);
+    height: 100%;
+    display: none;
+}
+.pc{
+    width: 30%;
+    text-align: center;   
+    color:violet;
+    font-family: var(--font);
+    font-size: var(--fontsize);
+    font-weight: bold;
+    background-color: var(--color3);
+    height: 100%;
+    
+}
+/* (max-width:1023px) những phần css áp dụng cho cả css mobile và tablet tránh lặp lại css nếu cả mobile và tablet đều có  */
+@media only screen and (max-width:63.9375em)
+{
+    
+}
+/* Mobile 739px áp dụng riêng cho phần mobile */
+@media only screen and (max-width:46.1875em)
+{
+    .mobile{display: block;}
+    .pc{display: none;}
+}
+/* Tablet (min-width:740px) and (max-width:1023px) */
+@media only screen and (min-width:46.25em) and (max-width:63.9375em)
+{
+    .tablet{display:block;}
+    .pc{display: none;}
+}
+/* pc (min-width:1024px) thường không sử dụng và khai báo media này vì pc đã css trên đầu tiên
+@media only screen and (min-width:64em)
+{.pc{display: block;}
+
+} */

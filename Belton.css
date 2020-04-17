@@ -1,0 +1,303 @@
+*{margin:0;padding:0}
+:root{
+--font1:'Oswald', sans-serif;
+--fontsize1:48px;
+--linehight1:59px;
+--font2: 'Amiri', serif;
+--fontsize2:26px;
+--fontsize3:25px;
+}
+
+.banner_top{
+    background:url(./Images/computer.jpg) top center;
+    background-attachment: fixed;
+    width: 100%;
+    height:600px;
+    background-size: cover;
+    position: relative;
+}
+.banner_top:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-linear-gradient(left,#050505 0%,#ffffff00 50%,black 100% );}
+
+.banner_top ._3cot{
+    display:flex;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.banner_top ._3cot ._1cot{
+    width: 33.33%;
+}
+/* áp dụng 2 class cùng lúc thì viết liền nhau */
+.banner_top ._3cot ._1cot.cottrai{
+    padding-left: 20px;
+} 
+.banner_top ._3cot ._1cot.cottrai a{
+    font-size: 30px;
+    display:inline-block;
+    color:#fff;
+    padding:10px 5px;
+} 
+.banner_top ._3cot ._1cot.cottrai a:hover{
+    color:#0345bf;
+} 
+.banner_top ._3cot ._1cot.cotphai{
+    text-align: right;
+    padding-right: 20px;    
+}
+
+.banner_top ._3cot ._1cot.cotphai a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 24px;
+    padding:20px 10px;
+    display:inline-block;
+  
+}
+.banner_top ._3cot ._1cot.cotphai a:hover .mauface{
+    color:blue;
+}
+.banner_top ._3cot ._1cot.cotphai a:hover .mautwitter{
+    color:rgb(247, 9, 167);
+}
+.banner_top ._3cot ._1cot.cotphai a:hover .mauglobal{
+    color:red;   
+}
+.banner_top ._3cot ._1cot.cotgiua{
+    text-align: center;
+    color:#fff;    
+}
+.banner_top ._3cot ._1cot.cotgiua img{
+    padding-top:20px;
+    width:90px;
+}
+/* end 3 cot */
+.text_banner{
+    width:100%;   
+    top: 40%;;
+    position: absolute;
+   color:white;
+   z-index: 3;
+}
+.text_banner .content{
+    width: 1000px;
+    margin: auto;
+}
+.text_banner .content .smalltext{
+    color:white;
+    font-size: var(--font1);
+    line-height: var(--linehight1);
+}
+.text_banner .content h1{
+    color: white;
+    width: 50%;
+}
+
+/* end css for banner */
+.content1{
+    width:1000px; 
+    display: flex;
+    margin:auto;
+    padding:80px 0;
+    color: #666666;
+    font-family: var(--font2);
+    font-size: var(--fontsize2);
+}
+.content1 .trai{
+    width: 30%;     
+}
+.content1 .trai h2{
+    font-family: var(--font1);
+    font-size: var(--fontsize3);
+    color:#555A61;
+}
+.content1 .phai{
+    width: 70%;
+    font-family: var(--fontsize2);
+}
+.content1 .phai p{
+    line-height: 30px;
+    margin-top:15px;
+}
+.content1 .phai p:before{
+    content: "\f178";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: relative;
+    left:-5px;
+    transition:0.3s;
+    opacity: 0;
+}
+.content1 .phai p:hover:before{
+    left:0px;
+    opacity: 1;
+}
+/* End css content1 */
+body,html{width:100%;height: 100%;}
+.content2{
+    width: 100%;  
+    height: auto; 
+    background-color:#000000;
+   
+}
+.content2 .title{
+    color:white;
+text-align: center;
+font-size:50px;
+padding:40px 0;
+font-family: var(--font1);
+}
+.content2 ._1khoi{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+.content2 ._1khoi .left{
+    width:40%;      
+   height: 100%;
+    background-color: white;
+    margin:20px 20px;
+    position: relative;
+   background-color: black;
+   
+}
+.content2 ._1khoi .left img{
+    width: 100%;
+    background-size: cover;
+    
+}
+.content2 ._1khoi .left:after{
+    content:"";
+    width: 100%;   
+    height:0%;   
+     top:0px;
+     left:0px;
+     background-color:#00000073;     
+     transition:0.7s;
+     opacity: 0;
+ }
+.content2 ._1khoi .left:hover:after{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     top:0px;
+     left:0px;
+     background-color:#00000073;
+     opacity: 1;     
+ }
+.content2 ._1khoi .left .chu1{
+    visibility: hidden;   
+    opacity: 0;
+    position: absolute;
+    color:red;
+    padding:6px 5px;
+    height: 36px;
+    font-family: var(--font1);
+    top:20px;
+    left:20px;
+    font-size:25px;      
+    overflow: hidden;  
+    z-index: 2;
+    transition:2s;
+}
+
+.content2 ._1khoi .left .chu1:after{
+    content:""; 
+    width:100%;
+    height: 36px; 
+    padding:5px 50px;     
+    background-color: white;    
+    position: relative;
+    top:0px;   
+   right: -110% ;  
+   transition:2.2s; 
+}
+.content2 ._1khoi .left:hover .chu1{
+   
+    transition:1s; 
+    overflow: hidden;   
+    visibility: visible ;
+    opacity: 1;
+  
+   
+    
+}
+
+
+.content2 ._1khoi .left:hover .chu1:after{
+    content:"";   
+    padding:5px 50px;     
+    background-color: white;    
+    position: absolute;
+    top:0px;   
+    right: 100%; 
+   transition:2s;
+   opacity: 1;    
+   display: inline;
+}
+.content2 ._1khoi .left .chu2{
+    position: absolute;
+    width:100%;
+    height: 36px;   
+    color:white;
+    font-family: var(--font1);
+    top:68px;
+    left:20px;
+    font-size:25px;  
+    overflow: hidden;
+    z-index: 2;
+    visibility: hidden; 
+    opacity:0;
+    transition:3s;
+}
+.content2 ._1khoi .left:hover .chu2{
+    visibility: visible;
+    opacity:1;
+   transition:2s;
+}
+.content2 ._1khoi .left .chu2:after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 36px;
+    padding:4px 50px;    
+    background-color: white;
+    color:white;
+    font-family: var(--font1);
+    top:0px;
+    transform: translateX(100%);
+    font-size:25px;
+    overflow: hidden;
+    transition: 7s;
+}
+.content2 ._1khoi .left:hover .chu2:after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 36px;
+    padding:4px 50px;    
+    background-color: white;
+    color:white;
+    font-family: var(--font1);
+    top:0px;
+    transform: translateX(-400%);
+    font-size:25px;
+    transition:5s;
+}
+.content2 ._1khoi .right{
+    width:50%;   
+    height: 100%;
+    background-color: white;
+    margin:20px 20px;
+}
+.content2 ._1khoi .right img{ width: 100%;}
+
+
+
